@@ -1,0 +1,274 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #ebebeb
+    }
+    
+    .header {
+        background-color: #ebebeb;
+        padding-bottom: 10px;
+        display: flex;
+        flex-flow: column wrap;
+        width: 90%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .registrate {
+        margin-left: 20px;
+        margin-right: auto;
+    }
+    
+    .cabecera {
+        background-color: #EAC926;
+        padding-bottom: 10px;
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    div.cabecera {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5%;
+    }
+    
+    .logo {
+        display: flex;
+        flex-flow: column wrap;
+        width: 50%;
+        flex: 1 1 auto;
+    }
+    
+    .form_login {
+        display: flex;
+        flex-flow: column wrap;
+        /* Centrar el formulario en la página
+    margin: 0 auto;*/
+        width: 90%;
+        /* Esquema del formulario */
+        padding: 1em;
+        border: 1px solid black;
+        background-color: #ebebeb;
+        border-radius: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        font-size: 16px;
+        max-width: 600px;
+        box-sizing: border-box;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    form li+li {
+        margin-top: 1em;
+    }
+    
+    li input {
+        width: 90%;
+        height: 20px;
+        font-size: 16px;
+    }
+    
+    label {
+        /* Tamaño y alineación uniforme */
+        display: inline-block;
+        text-align: right;
+        font-size: 16px;
+    }
+    
+    .fl_fechNac {
+        font-size: 14 italic;
+    }
+    
+    input:focus,
+    textarea:focus {
+        /* Destacado adicional para elementos que tienen el cursor */
+        border-color: #000;
+    }
+    
+    .fl_Domicilio {
+        display: flex;
+        flex-direction: column;
+        height: 25px;
+        min-width: 200px;
+        max-width: 500px;
+        align-content: center;
+        position: relative
+    }
+    
+    .fl_calle {
+        width: 80vw;
+        min_width: 300px;
+        max-width: 500px;
+        position: absolute;
+        left: 0;
+        top: 25px
+    }
+    
+    .fl_altura {
+        width: 20vw;
+        position: absolute;
+        left: 0;
+        top: 50px
+    }
+    
+    .fl_piso {
+        width: 15vw;
+        position: absolute;
+        left: 90px;
+        top: 50px
+    }
+    
+    .fl_dpto {
+        width: 15vW;
+        position: absolute;
+        left: 150px;
+        top: 50px
+    }
+    
+    .fl_cp {
+        width: 15vw;
+        position: absolute;
+        right: 30px;
+        top: 75px
+    }
+    
+    .fl_ciudad {
+        width: 70%;
+        position: absolute;
+        left: 0;
+        top: 75px;
+    }
+    
+    .fl_provincia {
+        width: 45%;
+        position: absolute;
+        left: 0;
+        top: 100px;
+    }
+    
+    .fl_pais {
+        width: 45%;
+        position: absolute;
+        left: 150px;
+        top: 100px;
+    }
+    
+    .fl_checkbox {
+        width: 70%;
+    }
+    /*.form_register button {
+    display: flex;
+    flex-flow: row wrap;
+    /* Alinear los botones con los campos de texto */
+    /*width: 100px;
+    font-size: 16px;
+    text-align: center;
+
+    /* mismo tamaño que los elementos de la etiqueta
+}*/
+    
+    .fl_checkbox {
+        font-size: 14;
+    }
+    
+    .fl_registro button {
+        background-color: #000;
+        color: #ebebeb;
+        width: 90%;
+        font-size: 16px;
+        justify-content: center;
+    }
+    /*.fl_fristro button:hover {
+    background-color: yellow;
+}*/
+    
+    .fl_limpiar button {
+        background-color: rgb(155, 154, 154);
+        color: #ebebeb;
+        width: 90%;
+        justify-content: center;
+    }
+    
+    .tuFoto {
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .footer {
+        display: flex;
+        flex-flow: wrap;
+        background: white;
+        padding: 25px;
+        justify-content: center;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        /*position: fixed;
+    bottom:0;*/
+    }
+    
+    .pie {
+        background-color: white;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 15px solid white;
+    }
+    
+    .pie i {
+        color: #1259c3;
+        align-self: center;
+    }
+    
+    .footer p {
+        font-size: 12px;
+    }
+    
+    .footer h4 {
+        font-size: 18px;
+    }
+    
+    @media screen and (max-width: 800px) {
+        .section {
+            flex-direction: column;
+        }
+        .manito {
+            visibility: hidden;
+        }
+        /*.navegar {
+        visibility: hidden;
+    }*/
+        .detalle {
+            visibility: hidden;
+        }
+        .articulosEnVenta {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+    
+    @media screen and (min-width:801px) {
+        .section {
+            flex-direction: row;
+        }
+        .buscarListas {
+            visibility: hidden;
+        }
+    }

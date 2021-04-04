@@ -1,0 +1,169 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb
+}
+
+.header {
+    background-color: #ebebeb;
+    padding-bottom: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cabecera {
+    background-color: #EAC926;
+    padding-bottom: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.cabecera {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.logo {
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    flex: 1 1 auto;
+}
+
+.form_login {
+    position: relative;
+    width: 320px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: #ebebeb;
+    border-radius: 1em;
+    align-self: center;
+}
+
+.form_login label {
+    position: absolute;
+    width: 280px;
+    top: 10px;
+    left: 20px
+}
+
+ul {
+    list-style: none;
+}
+
+.fl_usuario input {
+    position: absolute;
+    width: 280px;
+    top: 40px;
+    left: 20px;
+}
+
+.fl_password input {
+    position: absolute;
+    width: 280px;
+    top: 100px;
+    left: 20px;
+}
+
+.fl_password label {
+    position: absolute;
+    width: 300px;
+    top: 80px;
+    left: 20px;
+}
+
+.fl_registro button {
+    position: absolute;
+    bottom: 70px;
+    left: 0px;
+    background-color: #000;
+    color: #ebebeb;
+    width: 100%;
+    font-size: 18PX;
+    justify-content: center;
+}
+
+.fl_registro a :hover {
+    background-color: #0022AA;
+}
+
+.fl_limpiar button {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    background-color: rgb(155, 154, 154);
+    color: #ebebeb;
+    width: 100%;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.fl_email label {
+    position: absolute;
+    width: 300px;
+    top: 65px;
+    left: 20px;
+}
+
+.fl_olvido label {
+    position: absolute;
+    width: 300px;
+    top: 140px;
+    left: 20px;
+}
+
+.fl_noRegistrado {
+    position: absolute;
+    width: 300px;
+    top: 170px;
+    left: 20px;
+}
+
+
+/*Inicia footer*/
+
+.footer {
+    display: flex;
+    flex-flow: wrap;
+    background: white;
+    padding: 25px;
+    justify-content: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.pie {
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 15px solid white;
+}
+
+.pie i {
+    color: #1259c3;
+    align-self: center;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+.footer h4 {
+    font-size: 18px;
+}
