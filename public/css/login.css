@@ -1,48 +1,3 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb
-}
-
-.header {
-    background-color: #ebebeb;
-    padding-bottom: 10px;
-    display: flex;
-    flex-flow: column wrap;
-    width: 90%;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cabecera {
-    background-color: #EAC926;
-    padding-bottom: 10px;
-    display: flex;
-    flex-flow: column wrap;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div.cabecera {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5%;
-}
-
-.logo {
-    display: flex;
-    flex-flow: column wrap;
-    width: 50%;
-    flex: 1 1 auto;
-}
-
 .form_login {
     position: relative;
     width: 320px;
@@ -131,39 +86,4 @@ ul {
     width: 300px;
     top: 170px;
     left: 20px;
-}
-
-
-/*Inicia footer*/
-
-.footer {
-    display: flex;
-    flex-flow: wrap;
-    background: white;
-    padding: 25px;
-    justify-content: center;
-    align-self: center;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-}
-
-.pie {
-    background-color: white;
-    justify-content: center;
-    text-align: center;
-    border-bottom: 15px solid white;
-}
-
-.pie i {
-    color: #1259c3;
-    align-self: center;
-}
-
-.footer p {
-    font-size: 12px;
-}
-
-.footer h4 {
-    font-size: 18px;
 }

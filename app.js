@@ -18,6 +18,6 @@ app.get('/register', (req, res) => {
     res.sendFile(__dirname + '/views/register.html');
 
 });
-app.listen(puerto || 3000, function() {
-    console.log("Servidor corriendo en el puerto 3000");
+app.listen(puerto || 3030, function() {
+    console.log("Servidor corriendo en el puerto 3030");
 });

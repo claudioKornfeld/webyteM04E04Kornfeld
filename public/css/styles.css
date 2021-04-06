@@ -1,310 +1,334 @@
-                * {
-                    margin: 0px;
-                    padding: 0px;
-                    box-sizing: border-box;
-                }
-                
-                body {
-                    font-family: 'Roboto', sans-serif;
-                    background-color: #ebebeb;
-                }
-                
-                .section {
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: space-between;
-                }
-                
-                .articulos {
-                    display: flex;
-                    flex: 2 1 auto;
-                    flex-flow: row wrap;
-                }
-                
-                article {
-                    background-color: blanchedalmond;
-                    flex: 1 1 40%;
-                }
-                
-                .navegar {
-                    flex: 1 1 100%;
-                }
-                
-                h3 {
-                    font-size: 24px;
-                }
-                
-                p {
-                    font-size: 12px;
-                }
-                
-                .header {
-                    background-color: #EAC926;
-                    padding-bottom: 10px;
-                    display: flex;
-                    flex-flow: column wrap;
-                    width: 90%;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-                
-                div.cabecera {
-                    display: flex;
-                    flex-wrap: wrap;
-                    padding: 5%;
-                }
-                
-                .logo {
-                    display: flex;
-                    flex-flow: column wrap;
-                    width: 50%;
-                    position: fixed top: 0 left: 0;
-                }
-                
-                .rubros {
-                    display: flex;
-                    flex-flow: column wrap;
-                    font-size: 14px;
-                    color: black;
-                    width: 60%;
-                    padding: 5px;
-                    /*flex: 1 1 100%;*/
-                }
-                /*header div.logo,
- header .rubros {
-     width: 50%;
-}*/
-                
-                .manito {
-                    color: black;
-                    font-size: 14px;
-                    padding: 10px;
-                    width: 90%;
-                }
-                
-                .navegar ul li {
-                    list-style: none;
-                    text-align: left;
-                }
-                
-                .navegar ul li a {
-                    text-decoration: none;
-                    color: #000;
-                }
-                
-                .buscarListas {
-                    background: #EAC926;
-                    color: #1259c3;
-                    text-align: center;
-                }
-                
-                section.banner img {
-                    width: 90%;
-                    display: flex;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-                /* aca va el main*/
-                
-                main {
-                    width: 90%;
-                    margin: 0 auto;
-                }
-                
-                h3 {
-                    font-size: 18px;
-                }
-                
-                .titulos {
-                    display: flex;
-                    background: #ebebeb;
-                    font-size: 24 px;
-                    width: 90%;
-                    text-align: left;
-                    margin-left: auto;
-                    margin-right: auto;
-                    flex: 1 1 40%
-                }
-                
-                section {
-                    display: flex;
-                    background: #ebebeb;
-                    flex: 2 1 auto;
-                    flex-flow: row wrap;
-                }
-                
-                .precios {
-                    display: flex;
-                    flex-flow: column nowrap;
-                    font-size: 18px;
-                }
-                
-                .descuento {
-                    font-size: 16px;
-                    width: 50%
-                }
-                
-                .detalle {
-                    font-size: 16px;
-                }
-                
-                .articulosEnVenta {
-                    display: flex;
-                    flex-flow: column wrap;
-                    /*flex: 1 1 45%;*/
-                    background: #ebebeb;
-                    margin-left: auto;
-                    margin-right: auto;
-                    border: 10px solid #ebebeb;
-                }
-                
-                .imgArticulo {
-                    display: flex;
-                    width: 100%;
-                    flex: 1 1 40%;
-                }
-            }
-            .boxArticulo {
-                display: flex;
-                flex-flow: column;
-                flex: 1 1 auto;
-                background: white;
-                padding: 15px;
-                position: relative;
-                border-top: 1px solid #ebebeb
-            }
-            .camion {
-                display: flex;
-                color: #39b54a;
-                background-color: white;
-                border: 2px solid #39b54a;
-                border-radius: 20%;
-                width: 25px;
-                position: absolute;
-                top: -15px;
-                right: 20px;
-            }
-            .detalle {
-                visibility: hidden;
-            }
-            h2 {
-                font-size: 24px;
-            }
-            .buscarListas i {
-                background: #1259c3;
-                padding: 5px;
-                color: white;
-                position: relative;
-            }
-            .footer {
-                display: flex;
-                flex-flow: wrap;
-                background: white;
-                padding: 25px;
-                justify-content: center;
-                align-self: center;
-                margin-left: auto;
-                margin-right: auto;
-                box-sizing: border-box;
-            }
-            .pies {
-                display: flex;
-                flex-direction: column;
-            }
-            .pie {
-                background-color: white;
-                justify-content: center;
-                text-align: center;
-                border-bottom: 15px solid white;
-            }
-            .pie i {
-                color: #1259c3;
-                align-self: center;
-            }
-            .footer p {
-                font-size: 12px;
-            }
-            .footer h4 {
-                font-size: 18px;
-            }
-            /* CELULARES*/
-            @media screen and (min-width:0px) {
-                .section {
-                    flex-direction: column;
-                }
-            }
-            /*tablets (segun consigna*/
-            @media screen and (min-width: 361px) {
-                .buscarListas {
-                    visibility: hidden;
-                }
-                
-                .section {
-                    flex-direction: row;
-                }
-                
-                .articulosEnVenta {
-                    display: flex;
-                    /*flex-flow: row wrap;*/
-                    width: 45%;
-                }
-            }
-            @media screen and (min-width:770px) {
-                .section {
-                    flex-direction: row;
-                }
-                
-                .articulosEnVenta {
-                    display: flex;
-                    flex-direction: column;
-                    flex: 1 2 25%;
-                    flex-flow: column wrap;
-                    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-                }
-                
-                .buscarListas {
-                    visibility: hidden;
-                }
-                /* .detalle {
-                    visibility: visible;
-                }*/
-                
-                .pies {
-                    flex-direction: row;
-                }
-            }
-            @media screen and (min-width:990px) {
-                .section {
-                    flex-direction: row;
-                }
-                
-                .articulosEnVenta {
-                    display: flex;
-                    flex-direction: column;
-                    flex: 1 4 25%;
-                    flex-flow: row wrap;
-                    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-                }
-                
-                .buscarListas {
-                    visibility: hidden;
-                }
-                
-                .detalle {
-                    visibility: visible;
-                }
-                
-                .pies {
-                    flex-direction: row;
-                }
-                
-                .imgArticulo {
-                    display: flex;
-                    width: 100%;
-                    flex: 1 4 25%;
-                }
-                
-                .boxArticulo {
-                    display: flex;
-                    flex-flow: row;
-                }
+                     * {
+                         margin: 0px;
+                         padding: 0px;
+                         box-sizing: border-box;
+                     }
+                     
+                     body {
+                         font-family: 'Roboto', sans-serif;
+                         background-color: #ebebeb;
+                     }
+                     
+                     .header {
+                         background-color: #EAC926;
+                         padding-bottom: 10px;
+                         display: flex;
+                         flex-flow: column wrap;
+                         width: 90%;
+                         margin-left: auto;
+                         margin-right: auto;
+                         position: relative;
+                     }
+                     
+                     div.cabecera {
+                         display: flex;
+                         flex-wrap: wrap;
+                         padding: 1%;
+                     }
+                     
+                     .logo img {
+                         display: flex;
+                         flex-flow: column wrap;
+                         width: 90%;
+                     }
+                     
+                     .section {
+                         display: flex;
+                         flex-flow: row wrap;
+                         justify-content: space-between;
+                     }
+                     
+                     .articulos {
+                         display: flex;
+                         flex: 2 1 auto;
+                         flex-flow: row wrap;
+                     }
+                     
+                     article {
+                         background-color: blanchedalmond;
+                         flex: 1 1 40%;
+                     }
+                     
+                     .navbar ul {
+                         display: flex;
+                         flex-direction: row;
+                     }
+                     
+                     .login-navbar {
+                         position: absolute;
+                         bottom: 20px;
+                         right: 20px;
+                         visibility: hidden;
+                     }
+                     
+                     .login-navbar ul {
+                         display: flex;
+                         flex-direction: row;
+                     }
+                     
+                     h3 {
+                         font-size: 24px;
+                     }
+                     
+                     p {
+                         font-size: 12px;
+                     }
+                     
+                     .rubros {
+                         display: flex;
+                         flex-flow: column wrap;
+                         font-size: 14px;
+                         color: black;
+                         width: 60%;
+                         padding: 5px;
+                     }
+                     
+                     .hand-holding {
+                         color: black;
+                         font-size: 14px;
+                         padding: 10px;
+                         width: 100%;
+                     }
+                     
+                     .navbar {
+                         position: absolute;
+                         bottom: 20px;
+                         left: 20px;
+                         visibility: hidden;
+                     }
+                     
+                     .navbar ul li {
+                         list-style: none;
+                         text-align: left;
+                     }
+                     
+                     .navbar ul li a {
+                         text-decoration: none;
+                         color: #000;
+                     }
+                     
+                     section.banner img {
+                         width: 90%;
+                         display: flex;
+                         margin-left: auto;
+                         margin-right: auto;
+                     }
+                     
+                     .barras-burger {
+                         width: 90%;
+                         display: block;
+                         padding: 12px;
+                         text-align: center;
+                         font-size: 18px;
+                         margin: auto;
+                         margin-top: 15px;
+                         border-radius: 8px;
+                         background: #EAC926;
+                         color: white;
+                     }
+                     
+                     .barras-burger i {
+                         background-color: #1259c3;
+                         padding: 10px;
+                         border-radius: 8px;
+                     }
+                 }
+                 /* aca va el main*/
+                 main {
+                     width: 90%;
+                     margin: 0 auto;
+                 }
+                 h3 {
+                     font-size: 18px;
+                 }
+                 .titulos {
+                     display: flex;
+                     background: #ebebeb;
+                     font-size: 24 px;
+                     width: 90%;
+                     text-align: left;
+                     margin-left: 15px;
+                     margin-right: auto;
+                     flex: 1 1 40%
+                 }
+                 section {
+                     display: flex;
+                     background: #ebebeb;
+                     flex: 2 1 auto;
+                     flex-flow: row wrap;
+                 }
+                 .precios {
+                     display: flex;
+                     flex-flow: column nowrap;
+                     font-size: 18px;
+                 }
+                 .descuento {
+                     font-size: 16px;
+                     width: 50%
+                 }
+                 .detalle {
+                     font-size: 16px;
+                 }
+                 .articulosEnVenta {
+                     display: flex;
+                     flex-flow: column wrap;
+                     /*flex: 1 1 45%;*/
+                     
+                     background: #ebebeb;
+                     margin-left: auto;
+                     margin-right: auto;
+                     border: 10px solid #ebebeb;
+                 }
+                 .imgArticulo {
+                     display: flex;
+                     width: 100%;
+                     flex: 1 1 40%;
+                 }
+                 .boxArticulo {
+                     display: flex;
+                     flex-flow: column;
+                     flex: 1 1 auto;
+                     background: white;
+                     padding: 15px;
+                     position: relative;
+                     border-top: 1px solid #ebebeb
+                 }
+                 .camion {
+                     display: flex;
+                     color: #39b54a;
+                     background-color: white;
+                     border: 2px solid #39b54a;
+                     border-radius: 20%;
+                     width: 25px;
+                     position: absolute;
+                     top: -15px;
+                     right: 20px;
+                 }
+                 h2 {
+                     font-size: 24px;
+                 }
+                 .footer {
+                     display: flex;
+                     flex-flow: wrap;
+                     background: white;
+                     padding: 25px;
+                     justify-content: center;
+                     align-self: center;
+                     margin-left: auto;
+                     margin-right: auto;
+                     box-sizing: border-box;
+                 }
+                 .feet {
+                     display: flex;
+                     flex-direction: column;
+                 }
+                 .onefoot {
+                     background-color: white;
+                     justify-content: center;
+                     text-align: center;
+                     border-bottom: 15px solid white;
+                 }
+                 .onefoot i {
+                     color: #1259c3;
+                     align-self: center;
+                 }
+                 .footer p {
+                     font-size: 12px;
+                 }
+                 .footer h4 {
+                     font-size: 18px;
+                 }
+                 /* CELULARES*/
+                 @media screen and (min-width:0px) {
+                     .section {
+                         flex-direction: column;
+                     }
+                     
+                     .detalle {
+                         opacity: 0;
+                     }
+                 }
+                 /*tablets (segun consigna*/
+                 @media screen and (min-width: 361px) {
+                     .section {
+                         flex-direction: row;
+                     }
+                     
+                     .detalle {
+                         opacity: 0;
+                     }
+                     
+                     .articulosEnVenta {
+                         display: flex;
+                         /*flex-flow: row wrap;*/
+                         width: 45%;
+                     }
+                 }
+                 @media screen and (min-width:770px) {
+                     .section {
+                         flex-direction: row;
+                     }
+                     
+                     .login-navbar {
+                         visibility: visible;
+                     }
+                     
+                     .navbar {
+                         visibility: visible;
+                     }
+                     
+                     .detalle {
+                         opacity: 1;
+                     }
+                     
+                     .barras-burger {
+                         visibility: hidden;
+                     }
+                     
+                     .articulosEnVenta {
+                         display: flex;
+                         flex-direction: column;
+                         flex: 1 2 25%;
+                         flex-flow: column wrap;
+                         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+                     }
+                     
+                     .feet {
+                         flex-direction: row;
+                     }
+                 }
+                 @media screen and (min-width:990px) {
+                     .section {
+                         flex-direction: row;
+                     }
+                     
+                     .detalle {
+                         opacity: 1;
+                     }
+                     
+                     .articulosEnVenta {
+                         display: flex;
+                         flex-direction: column;
+                         flex: 1 4 25%;
+                         flex-flow: row wrap;
+                         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+                     }
+                     
+                     .detalle {
+                         visibility: visible;
+                     }
+                     
+                     .pies {
+                         flex-direction: row;
+                     }
+                     
+                     .imgArticulo {
+                         display: flex;
+                         width: 100%;
+                         flex: 1 4 25%;
+                     }
+                     
+                     .boxArticulo {
+                         display: flex;
+                         flex-flex
+                     }
