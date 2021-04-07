@@ -11,16 +11,15 @@
                      
                      .header {
                          background-color: #EAC926;
-                         padding-bottom: 10px;
                          display: flex;
                          flex-flow: column wrap;
-                         width: 90%;
+                         width: 100%;
                          margin-left: auto;
                          margin-right: auto;
                          position: relative;
                      }
                      
-                     div.cabecera {
+                     .cabecera {
                          display: flex;
                          flex-wrap: wrap;
                          padding: 1%;
@@ -29,7 +28,7 @@
                      .logo img {
                          display: flex;
                          flex-flow: column wrap;
-                         width: 90%;
+                         width: 50vw;
                      }
                      
                      .section {
@@ -108,23 +107,23 @@
                      }
                      
                      section.banner img {
-                         width: 90%;
+                         width: 100%;
                          display: flex;
                          margin-left: auto;
                          margin-right: auto;
                      }
                      
                      .barras-burger {
-                         width: 90%;
-                         display: block;
+                         width: 100vw;
+                         display: inline-block;
                          padding: 12px;
                          text-align: center;
                          font-size: 18px;
                          margin: auto;
-                         margin-top: 15px;
-                         border-radius: 8px;
+                         margin-top: auto;
                          background: #EAC926;
                          color: white;
+                         align-self: center;
                      }
                      
                      .barras-burger i {
