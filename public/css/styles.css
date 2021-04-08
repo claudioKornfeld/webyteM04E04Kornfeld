@@ -25,10 +25,20 @@
                          padding: 1%;
                      }
                      
+                     .logo {
+                         display: flex;
+                         flex-flow: row wrap;
+                     }
+                     
                      .logo img {
                          display: flex;
                          flex-flow: column wrap;
                          width: 50vw;
+                     }
+                     
+                     .form_rubros {
+                         text-align: center;
+                         padding-top: 20px;
                      }
                      
                      .section {
